@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10Dames</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="/images/skyscraper.svg" />
+
+    <link rel="stylesheet" href="/css/default.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <script src="/js/grid.js"></script>
+    <script src="/js/solver.js"></script>
+    <script src="/js/ui.js"></script>
+
+
+
+    <script>
+      $("document").ready(() => {
+        initGrid();
+        solver()
+      });
+    </script>
+  </head>
+  <body>
+    <div id="canvas">
+      <div id="grid"></div>
+    </div>
+    <div id="footer">
+      <div id="commands">
+        <button class="btn" id="btnPrevious">&lang;&lang;</button>
+        <div class="counter">
+          <div id="counter">-</div>
+          <div>&sol;</div>
+          <div id="total">-</div>
+        </div>
+        
+        <button class="btn" id=btnNext>&rang;&rang;</button>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
